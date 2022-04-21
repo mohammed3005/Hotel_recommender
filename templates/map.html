@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9d7e19e49a5a45e8b8884f2e76085573 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9d7e19e49a5a45e8b8884f2e76085573" ></div>
+        
+</body>
+<script>    
+    
+            var map_9d7e19e49a5a45e8b8884f2e76085573 = L.map(
+                "map_9d7e19e49a5a45e8b8884f2e76085573",
+                {
+                    center: [52.3727598, 4.8936041],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4873a9b34912402e8830f37c5309bcf8 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9d7e19e49a5a45e8b8884f2e76085573);
+        
+    
+            var tile_layer_3aa19c8dcc1b40ab8c0fd619d8f7d5c0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9d7e19e49a5a45e8b8884f2e76085573);
+        
+    
+            var marker_cf9c9bcf46d844368d8cab4357551663 = L.marker(
+                [52.3630682, 4.879445099999999],
+                {}
+            ).addTo(map_9d7e19e49a5a45e8b8884f2e76085573);
+        
+    
+            var beautify_icon_6527365585d54c258276eca3b9fc6a27 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 1, "textColor": "red"}
+            )
+            marker_cf9c9bcf46d844368d8cab4357551663.setIcon(beautify_icon_6527365585d54c258276eca3b9fc6a27);
+        
+    
+        var popup_2ef0bfaea94941a9b02bb3b2a51a25da = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fde62ec4da794aa08d8e06447ebb99f6 = $(`<div id="html_fde62ec4da794aa08d8e06447ebb99f6" style="width: 100.0%; height: 100.0%;">NH Amsterdam Centre</div>`)[0];
+            popup_2ef0bfaea94941a9b02bb3b2a51a25da.setContent(html_fde62ec4da794aa08d8e06447ebb99f6);
+        
+
+        marker_cf9c9bcf46d844368d8cab4357551663.bindPopup(popup_2ef0bfaea94941a9b02bb3b2a51a25da)
+        ;
+
+        
+    
+    
+            marker_cf9c9bcf46d844368d8cab4357551663.bindTooltip(
+                `<div>
+                     NH Amsterdam Centre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b30e6c0a63e4fa3bc6fa2d89a7e2e9d = L.marker(
+                [52.3419432, 4.8759604],
+                {}
+            ).addTo(map_9d7e19e49a5a45e8b8884f2e76085573);
+        
+    
+            var beautify_icon_2f295ce71385487e97bb4b150d514e75 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 2, "textColor": "red"}
+            )
+            marker_5b30e6c0a63e4fa3bc6fa2d89a7e2e9d.setIcon(beautify_icon_2f295ce71385487e97bb4b150d514e75);
+        
+    
+        var popup_0969ecfc96f54e1781d985a234a764c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a5bbc6828a1486282a656e7495c8e63 = $(`<div id="html_4a5bbc6828a1486282a656e7495c8e63" style="width: 100.0%; height: 100.0%;">citizenM Amsterdam</div>`)[0];
+            popup_0969ecfc96f54e1781d985a234a764c1.setContent(html_4a5bbc6828a1486282a656e7495c8e63);
+        
+
+        marker_5b30e6c0a63e4fa3bc6fa2d89a7e2e9d.bindPopup(popup_0969ecfc96f54e1781d985a234a764c1)
+        ;
+
+        
+    
+    
+            marker_5b30e6c0a63e4fa3bc6fa2d89a7e2e9d.bindTooltip(
+                `<div>
+                     citizenM Amsterdam
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ada351861e8a4dc88821ea6ab38d5886 = L.marker(
+                [52.3760456, 4.8943917],
+                {}
+            ).addTo(map_9d7e19e49a5a45e8b8884f2e76085573);
+        
+    
+            var beautify_icon_1493a260b2a94e7081860c3aa12bcf33 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 3, "textColor": "red"}
+            )
+            marker_ada351861e8a4dc88821ea6ab38d5886.setIcon(beautify_icon_1493a260b2a94e7081860c3aa12bcf33);
+        
+    
+        var popup_5d51f1fec6c243d6ba0258002f62815d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3c09f088889471c81db2bae660e1619 = $(`<div id="html_e3c09f088889471c81db2bae660e1619" style="width: 100.0%; height: 100.0%;">Inntel Hotels Amsterdam Centre</div>`)[0];
+            popup_5d51f1fec6c243d6ba0258002f62815d.setContent(html_e3c09f088889471c81db2bae660e1619);
+        
+
+        marker_ada351861e8a4dc88821ea6ab38d5886.bindPopup(popup_5d51f1fec6c243d6ba0258002f62815d)
+        ;
+
+        
+    
+    
+            marker_ada351861e8a4dc88821ea6ab38d5886.bindTooltip(
+                `<div>
+                     Inntel Hotels Amsterdam Centre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dd41f6ffc11b4a01bdc5fe4ad64367eb = L.marker(
+                [52.363889, 4.881302],
+                {}
+            ).addTo(map_9d7e19e49a5a45e8b8884f2e76085573);
+        
+    
+            var beautify_icon_e1e4e4ae7dd44221a5eef28c213a405e = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 4, "textColor": "red"}
+            )
+            marker_dd41f6ffc11b4a01bdc5fe4ad64367eb.setIcon(beautify_icon_e1e4e4ae7dd44221a5eef28c213a405e);
+        
+    
+        var popup_9cff8a9cfd75400e8578cf0633e77f26 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec2218014654401fbebb898e7f0bf030 = $(`<div id="html_ec2218014654401fbebb898e7f0bf030" style="width: 100.0%; height: 100.0%;">Hampshire Hotel Amsterdam American</div>`)[0];
+            popup_9cff8a9cfd75400e8578cf0633e77f26.setContent(html_ec2218014654401fbebb898e7f0bf030);
+        
+
+        marker_dd41f6ffc11b4a01bdc5fe4ad64367eb.bindPopup(popup_9cff8a9cfd75400e8578cf0633e77f26)
+        ;
+
+        
+    
+    
+            marker_dd41f6ffc11b4a01bdc5fe4ad64367eb.bindTooltip(
+                `<div>
+                     Hampshire Hotel Amsterdam American
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b235c7d75beb4ad6b27c868be1e30789 = L.marker(
+                [52.350396, 4.8756404],
+                {}
+            ).addTo(map_9d7e19e49a5a45e8b8884f2e76085573);
+        
+    
+            var beautify_icon_4aae0b4530b0410593c950fc50e0283c = new L.BeautifyIcon.icon(
+                {"backgroundColor": "#FFF", "borderColor": "blue", "borderWidth": 0.5, "icon": "bus", "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 5, "textColor": "red"}
+            )
+            marker_b235c7d75beb4ad6b27c868be1e30789.setIcon(beautify_icon_4aae0b4530b0410593c950fc50e0283c);
+        
+    
+        var popup_70cc64fd321b405688e60458a8a76d12 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_42787b5a1cb1439492378bbe3208fa87 = $(`<div id="html_42787b5a1cb1439492378bbe3208fa87" style="width: 100.0%; height: 100.0%;">Apollofirst Boutique Hotel</div>`)[0];
+            popup_70cc64fd321b405688e60458a8a76d12.setContent(html_42787b5a1cb1439492378bbe3208fa87);
+        
+
+        marker_b235c7d75beb4ad6b27c868be1e30789.bindPopup(popup_70cc64fd321b405688e60458a8a76d12)
+        ;
+
+        
+    
+    
+            marker_b235c7d75beb4ad6b27c868be1e30789.bindTooltip(
+                `<div>
+                     Apollofirst Boutique Hotel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

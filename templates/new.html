@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+{% block title %} Hotel Recommender  {% endblock %}
+{% block head %} {{ super() }} {% endblock %}
+{% block body %}
+     <br><br><br>
+
+    <h2><div align="center"><b>Hotel Recommender</b></div>  </h2>
+
+     <br>
+
+    
+      <form action = "/result" method = "POST" form name="myForm">
+        <div align="center">
+          
+            
+            <input list="hotel" name="hotel" required>
+              <datalist id='hotel'>
+              <option value="The Belgrave Hotel">London</option>
+              <option value="Park Plaza Victoria London">London</option>
+              <option value="Vienna Marriott Hotel">Vienna</option>
+              <option value="AZIMUT Hotel Vienna">Vienna</option>
+        
+              <option value="Villa Opera Drouot">Paris</option>
+              <option value="A La Villa Madame">Paris</option>
+              <option value="Amadi Park Hotel">Amsterdam</option>
+              <option value="Waldorf Astoria Amsterdam">Amsterdam</option>
+              <option value="Gallery Hotel">Barcelona</option>
+              <option value="Hotel Balmes">Barcelona</option>
+              
+              </datalist>
+            <label for="city">: type of hotel in :</label>
+
+            <input list="city" name="city" required>
+            <datalist id="city">
+              <option value="Paris">
+                <option value="London">
+                <option value="Barcelona">
+                <option value="Vienna">
+                  <option value="Amsterdam">
+            </datalist>
+            <input type="radio" name="options" id="tags" value="tags" required> By Features </input>
+            <input type="radio" name="options" id="reviews" value="reviews" required> By Reviews </input>
+            <input type = "submit" value = "Search" class="btn btn-secondary"/>
+
+
+        </div>
+      </form>
+      <br>
+      <h3> Features of Hotels in list are given below for reference:-</h3>
+      <table class="table">
+        <thead >
+          <tr>
+            <th scope="col">Hotel Name</th>
+
+            <th scope="col">Features</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for i in range(len) %}
+          <tr>
+            <td>{{ hotel_n[i] }}</td>
+            <td>
+            <table class="table-borderless table-sm">
+              {% for k in feature[i]%}
+              <tr>
+                {% for j in k%}
+                <td> {{ j }}</td>
+                {% endfor %}
+              </tr>
+              {% endfor %}
+            </table>
+          </td>
+          {% endfor %}
+        </tbody>
+      </table>
+
+
+{%endblock%}

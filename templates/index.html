@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block title %} Hotel Recommender {% endblock %}
+{% block head %} {{ super() }} {% endblock %}
+{% block body %}
+<br>
+<br>
+<h2 style=" padding-top: 3%;text-align: center;"> Top Hotel like {{ hotel }} in {{city}} : </h2>
+<section style="display:flex; justify-content: space-evenly;">
+  <div>
+    <ol type="1">
+    {% for n in range(name|length) %}
+    <li>{{ name[n] }}</li>
+    <table class="table-borderless table-sm" style='font-size:12px;'>
+      {% for k in feature[n]%}
+      <tr>
+        {% for j in k%}
+        <td> {{ j }}</td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+    </table>
+    {% endfor %}
+    </ol>
+  </div>  
+<div style="padding-right:3%;">
+  <iframe class="map", src="/map" width="600" height="400"></iframe>
+</div>
+</section>
+    
+
+
+{% endblock %}
